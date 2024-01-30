@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Student Form</h2>
+        <form id="studentForm">
+            <table class="studentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>D.O.B</th>
+                        <th>Gender</th>
+                        <th>Course</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="name"></td>
+                        <td><input type="number" name="age" min="0" max="30"></td>
+                        <td><input type="date" name="date"></td>
+                        <td>
+                            <div class="gender-select">
+                                <input type="radio" id="male" name="gender" value="Male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="gender-select">
+                                <input type="radio" id="female" name="gender" value="Female">
+                                <label for="female">Female</label>
+                            </div>
+                        </td>
+                        <td>
+                            <select name="course">
+                                <option value="select course">Select Course</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="Java Developer">Java Developer</option>
+                                <option value="Python Developer">Python Developer</option>
+                                <option value="SQL Database">SQL Database</option>
+                                <option value="UI/UX">UI/UX</option>
+                            </select>
+                        </td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="save-btn" type="submit" >Save</button>
+        </form>
+
+       <div class="studentResultForm">
+        <table class="studentResultTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>D.O.B</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+       </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
