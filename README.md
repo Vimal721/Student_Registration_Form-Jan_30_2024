@@ -24,4 +24,4 @@ This project consists of a simple student registration form created using HTML, 
 
 ### License
 
-This project is licensed under the MIT [LICENSE](LICENSE)
+This project is licensed under the [MIT LICENSE](LICENSE)
